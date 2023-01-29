@@ -1,0 +1,256 @@
+/*
+background #000b0f
+red #EA3546
+blue #93BEDF
+green #ACECA1
+yellow #FDFD96
+white white bro it's like the easiest colour
+*/
+
+:root {
+    --delay: 0.5s;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    background-color: #001117;
+}
+
+h1 {
+    font-size: 8em;
+    margin: 3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 3rem;
+    margin-top: 1rem;
+    color: #4b646b;
+}
+
+h3 {
+    font-size: 3em;
+    margin: 1rem;
+    margin-left: 1.5rem;
+}
+
+p {
+    font-size: 1.25em;
+    max-width: 40em;
+    margin: 2rem;
+}
+
+li {
+    font-size: 1.25em;
+    margin: 0.5rem;
+}
+
+ul {
+    margin: 2rem;
+}
+
+.green {
+    color: #ACECA1;
+}
+
+.red {
+    color: #EA3546;
+}
+
+.blue {
+    color: #93BEDF;
+}
+
+.yellow {
+    color: #FDFD96;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profile-pic {
+    width: 15vw;
+    height: 15vw;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 3rem;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.textbox {
+    background-color: #061d24;
+}
+
+.important {
+    font-size: 1.5em;
+    margin: 2rem;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.slide-in-left {
+    animation-name: slide-in-left;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.slide-in-right {
+    animation-name: slide-in-right;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.typing-effect {
+    border-right-color: rgba(75, 100, 107, 0);
+    border-right-width: 0.1em;
+    border-right-style: solid;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 11.25em;
+    animation-name: typing-effect;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    
+}
+
+.delay-1 {
+    animation-delay: var(--delay);
+}
+
+.delay-2 {
+    animation-delay: calc(var(--delay) * 2);
+}
+
+.delay-3 {
+    animation-delay: calc(var(--delay) * 3);
+}
+
+.delay-4 {
+    animation-delay: calc(var(--delay) * 4);
+}
+
+.delay-5 {
+    animation-delay: calc(var(--delay) * 5);
+}
+
+.delay-6 {
+    animation-delay: calc(var(--delay) * 6);
+}
+
+.delay-7 {
+    animation-delay: calc(var(--delay) * 7);
+}
+
+.delay-8 {
+    animation-delay: calc(var(--delay) * 8);
+}
+
+.delay-9 {
+    animation-delay: calc(var(--delay) * 9);
+}
+
+.delay-10 {
+    animation-delay: calc(var(--delay) * 10);
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translate(-100%, 0);
+    }
+    to {
+        transform: 0, 0;
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        transform: translate(100%, 0);
+    }
+    to {
+        transform: 0, 0;
+    }
+}
+
+@keyframes typing-effect {
+    0% {
+        border-right-color: rgba(75, 100, 107, 0);
+        width: 0;
+    }
+    10% {
+        border-right-color: rgba(75, 100, 107, 1);
+        width: 0;
+    }
+    90% {
+        border-right-color: rgba(75, 100, 107, 1);
+        width: 11.25em;
+    }
+    100% {
+        border-right-color: rgba(75, 100, 107, 0);
+        width: 11.25em;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+
+    html {
+        font-size: 1vw;
+    }
+
+    body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+    }
+    
+    body div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        height: 100%;
+        width: 50%;
+    }
+    
+    body div div {
+        width: auto;
+        height: auto;
+        justify-content: flex-start;
+    }
+    
+}
