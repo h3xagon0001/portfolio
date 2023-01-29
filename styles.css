@@ -20,6 +20,10 @@ html {
     background-color: #001117;
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-size: 8em;
     margin: 3rem;
@@ -93,11 +97,16 @@ ul {
 
 .textbox {
     background-color: #061d24;
+    padding: 0.5rem;
 }
 
 .important {
     font-size: 1.5em;
     margin: 2rem;
+}
+
+.mobile-fix {
+    margin-left: 3rem;
 }
 
 .fade-in {
